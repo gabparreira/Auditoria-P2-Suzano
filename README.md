@@ -72,7 +72,7 @@ A versão de cada norma consultada (link do CFC e data de acesso) está no campo
 - **Conta escolhida:** imobilizado, a maior conta do ativo. O saldo é de R$ 64,3 bi, 38% do ativo consolidado (nota 15 da DFP).
 - **Tamanho:** 520.000 bens sintéticos, conciliados por classe com os saldos de custo e de depreciação da nota 15.
 - **Erros inseridos:** 1.600 erros de 10 tipos (E1–E10), registrados em `gabarito_erros_SIM.csv`. O erro E10 é custo inflado em R$ 150 mi, espalhado por 400 bens, e só pode ser detectado por amostragem com documento.
-- **Arquivos grandes:** a `base_imobilizado_SIM.csv.gz` (~33 MB) e os `documentos_suporte_SIM.csv.gz` (~9 MB) passam do limite de envio pelo site do GitHub (25 MB). Eles estão no Google Drive: **[colar aqui o link do Drive]**.
+- **Arquivos grandes:** a `base_imobilizado_SIM.csv.gz` (~33 MB) e os `documentos_suporte_SIM.csv.gz` (~9 MB) passam do limite de envio pelo site do GitHub (25 MB). Eles estão no Google Drive: **(https://drive.google.com/drive/folders/1p7NR_u1c9nT5k-saTwRS_wPm-irc_mN2?usp=drive_link)**.
 
 ## 4. Como reproduzir
 
