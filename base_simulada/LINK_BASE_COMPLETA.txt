@@ -1,0 +1,7 @@
+Arquivos grandes da base sintética (SIM) – Google Drive:
+[colar aqui o link do Drive]
+
+- base_imobilizado_SIM.csv.gz (~33 MB)
+- documentos_suporte_SIM.csv.gz (~9 MB)
+
+DADOS SINTÉTICOS – não são registros reais da Suzano S.A.
