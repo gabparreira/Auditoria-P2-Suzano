@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/33887602/README.md)
+[README.md](https://github.com/user-attachments/files/33888090/README.md)
 # Dossiê de Auditoria – Suzano S.A. – Exercício 2025
 
 Trabalho da P2 de **Auditoria 1 (CCA0024) – Turma 02 – UnB – 2026.2**
@@ -20,24 +20,27 @@ Data de conclusão: 23/10/2026
 ```
 /
 ├── README.md
-├── Dossie_Auditoria_Suzano_2025_241003769.pdf   ← dossiê completo (capa, sumário, 28 PTs + PT CI)
-├── dossie/                                      ← PTs editáveis (.docx)
-├── A1_base_simulada/                            ← base sintética do imobilizado (SIM)
+├── .gitignore
+├── dossie/                                      ← dossiê final em PDF
+│   └── Dossie_Auditoria_Suzano_2025_241003769.pdf   (capa, sumário, 28 PTs + PT CI)
+├── papeis_trabalho/                             ← PTs editáveis (.docx), inclusive capa e sumário
+├── base_simulada/                               ← base sintética do imobilizado (SIM)
 │   ├── dicionario_variaveis_SIM.xlsx            (dicionário, premissas, conciliação, erros inseridos)
 │   ├── gabarito_erros_SIM.csv                   (registro dos 1.600 erros E1–E10)
 │   └── LINK_BASE_COMPLETA.txt                   (link do Google Drive para os arquivos grandes)
-├── A2_codigo/                                   ← notebooks do Google Colab
+├── codigo/                                      ← notebooks do Google Colab
 │   ├── 01_gerar_base_imobilizado_SIM.ipynb
 │   ├── 02_amostragem_AUM_SIM.ipynb
 │   └── 03_testes_100_SIM.ipynb
-├── A3_planilhas/                                ← planilhas editáveis
+├── planilhas/                                   ← planilhas editáveis
 │   ├── PT_320_Materialidade_Bases.xlsx          (A3  – materialidade)
 │   ├── PT_330_Testes_Publicos.xlsx              (A3b – testes com dados públicos)
 │   ├── PT_530_Amostra_AUM_SIM.xlsx              (A3c – amostragem AUM)
 │   ├── PT_500_Testes_100_SIM.xlsx               (A3d – testes em 100% da base)
 │   └── PT_520_Analiticos.xlsx                   (A3e – procedimentos analíticos)
-├── A4_Matriz_Cobertura.xlsx                     ← exigências da P2 → onde foram atendidas; normas × PTs
-└── A5_Relacao_Fontes.xlsx                       ← documentos, links, datas de acesso e páginas
+└── fontes/
+    ├── A4_Matriz_Cobertura.xlsx                 (exigências da P2 → onde foram atendidas; normas × PTs)
+    └── A5_Relacao_Fontes.xlsx                   (documentos, links, datas de acesso e páginas)
 ```
 
 ## 2. Papéis de trabalho
@@ -72,11 +75,11 @@ A versão de cada norma consultada (link do CFC e data de acesso) está no campo
 - **Conta escolhida:** imobilizado, a maior conta do ativo. O saldo é de R$ 64,3 bi, 38% do ativo consolidado (nota 15 da DFP).
 - **Tamanho:** 520.000 bens sintéticos, conciliados por classe com os saldos de custo e de depreciação da nota 15.
 - **Erros inseridos:** 1.600 erros de 10 tipos (E1–E10), registrados em `gabarito_erros_SIM.csv`. O erro E10 é custo inflado em R$ 150 mi, espalhado por 400 bens, e só pode ser detectado por amostragem com documento.
-- **Arquivos grandes:** a `base_imobilizado_SIM.csv.gz` (~33 MB) e os `documentos_suporte_SIM.csv.gz` (~9 MB) passam do limite de envio pelo site do GitHub (25 MB). Eles estão no Google Drive: **(https://drive.google.com/drive/folders/1p7NR_u1c9nT5k-saTwRS_wPm-irc_mN2?usp=drive_link)**.
+- **Arquivos grandes:** a `base_imobilizado_SIM.csv.gz` (~33 MB) e os `documentos_suporte_SIM.csv.gz` (~9 MB) passam do limite de envio pelo site do GitHub (25 MB). Eles estão no Google Drive: **[colar aqui o link do Drive]**.
 
 ## 4. Como reproduzir
 
-1. Abra os notebooks da pasta `A2_codigo/` no Google Colab, na ordem 01 → 02 → 03.
+1. Abra os notebooks da pasta `codigo/` no Google Colab, na ordem 01 → 02 → 03.
 2. **01_gerar_base_imobilizado_SIM:** gera a base, os documentos de suporte e o gabarito. A semente fixa é **42**, então a base sai sempre igual.
 3. **02_amostragem_AUM_SIM:** faz a amostragem por unidade monetária (AUM) com semente **2025**. Parâmetros:
    - risco de detecção (RD) de 10%;
@@ -107,5 +110,5 @@ Os resultados são idênticos nos dois ambientes. Uma diferença de comportament
   https://www.rad.cvm.gov.br/ENETWEB/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154674&CodigoTipoInstituicao=1
 - **Formulário de Referência 2026, versão 5 – RI Suzano** (acesso em 22/10/2026):
   https://ri.suzano.com.br/Portuguese/Arquivamentos/Documentos-entregues-a-CVM/default.aspx
-- **Normas Brasileiras de Contabilidade – Auditoria (NBC TA):** textos do CFC. Os links de cada norma estão em `A5_Relacao_Fontes.xlsx`.
+- **Normas Brasileiras de Contabilidade – Auditoria (NBC TA):** textos do CFC. Os links de cada norma estão em `fontes/A5_Relacao_Fontes.xlsx`.
 - **GRAMLING, A. A.; RITTENBERG, L. E.; JOHNSTONE, K. M.** *Auditoria*. Cengage, 2016, p. 298–302. Usado como referência da AUM.
